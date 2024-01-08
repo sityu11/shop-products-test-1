@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 1px solid black;
+}
+
+body,
+h1, h2, h3, h4, h5, h6,
+p,
+ul, ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd,
+fieldset,
+legend,
+button,
+input,
+textarea,
+pre,
+blockquote,
+address,
+th,
+td,
+hr {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+input::placeholder,
+textarea::placeholder {
+  opacity: 1;
+}
+
+/* ----End CSS reset---- */
+
+body {
+    background: url('image/white-background.png');
+    font-family: Arial, sans-serif;
+  }
+  
+  header {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  main {
+    padding: 20px;
+  }
+
+  .information-text {
+    max-width: 75%;
+  }
+
+  .container {
+    width: 95%;
+    margin: 0 auto;
+  }
+  
+  .search {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .product-card {
+    background-color: rgba(156, 197, 236, 0.3);
+    border: 5px solid #326ff3b3;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.548);
+    text-align: center;
+    width: 300px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+  
+  .product-card img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .product-card {
+      width: 45%;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .product-card {
+      width: 100%;
+    }
+  }
